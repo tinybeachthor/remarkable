@@ -22,7 +22,7 @@
           inherit system;
           overlays = [ tinybeachthor.overlay ];
         });
-      in {
+      in rec {
         devShell = import ./shell.nix { inherit pkgs; };
         packages = {
           paper2remarkable = (import ./paper2remarkable {
@@ -30,5 +30,6 @@
             mach-nix = (mach-nix.lib.${system});
           });
         };
+        overlay = final: prev: packages;
       });
 }
