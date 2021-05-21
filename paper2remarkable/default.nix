@@ -9,6 +9,7 @@ let
     requirements = ''
       paper2remarkable == ${version}
     '';
+    ignoreDataOutdated = true;
   };
 
 in
