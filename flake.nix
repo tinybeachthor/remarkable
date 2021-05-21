@@ -25,6 +25,7 @@
       in rec {
         devShell = import ./shell.nix { inherit pkgs; };
         packages = {
+          rmapi = pkgs.rmapi;
           paper2remarkable = (import ./paper2remarkable {
             inherit pkgs;
             mach-nix = (mach-nix.lib.${system});
