@@ -1,7 +1,7 @@
 {
   inputs = {
     flake-utils.url = github:numtide/flake-utils;
-    nixpkgs.url = github:NixOS/nixpkgs/nixos-20.09;
+    nixpkgs.url = github:NixOS/nixpkgs/nixos-21.05;
     mach-nix = {
       url = github:DavHau/mach-nix/master;
       inputs = {
