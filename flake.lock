@@ -2,11 +2,11 @@
   "nodes": {
     "flake-utils": {
       "locked": {
-        "lastModified": 1620759905,
-        "narHash": "sha256-WiyWawrgmyN0EdmiHyG2V+fqReiVi8bM9cRdMaKQOFg=",
+        "lastModified": 1601282935,
+        "narHash": "sha256-WQAFV6sGGQxrRs3a+/Yj9xUYvhTpukQJIcMbIi7LCJ4=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "b543720b25df6ffdfcf9227afafc5b8c1fabfae8",
+        "rev": "588973065fce51f4763287f0fda87a174d78bf48",
         "type": "github"
       },
       "original": {
@@ -17,20 +17,18 @@
     },
     "mach-nix": {
       "inputs": {
-        "flake-utils": [
-          "flake-utils"
-        ],
+        "flake-utils": "flake-utils",
         "nixpkgs": [
           "nixpkgs"
         ],
         "pypi-deps-db": "pypi-deps-db"
       },
       "locked": {
-        "lastModified": 1621069734,
-        "narHash": "sha256-XYEFgeFkzwR1jd2a0U+VAqH7qMPqj62KOFIIfQrY+8g=",
+        "lastModified": 1625744778,
+        "narHash": "sha256-9Ynbc/fIHZWBSU8DUzOhpX0b5bDDCAH7esGIIPLhHlo=",
         "owner": "DavHau",
         "repo": "mach-nix",
-        "rev": "5ad199c3d5616cb317763bd78b19944a090e544b",
+        "rev": "d884751a1c5942529ec8daf9d11ec516f8397b86",
         "type": "github"
       },
       "original": {
@@ -59,11 +57,11 @@
     "pypi-deps-db": {
       "flake": false,
       "locked": {
-        "lastModified": 1620853232,
-        "narHash": "sha256-SeePgys1mlGUrN/YhCRoo8nApRx5H+KKjyKM1zQ+yAE=",
+        "lastModified": 1622970040,
+        "narHash": "sha256-u//RFnae/XMIhoy83G2uH2Qu/1LiUhVCdwwY1xj4Ufs=",
         "owner": "DavHau",
         "repo": "pypi-deps-db",
-        "rev": "15175225c8295e08e5b95b2965892820a64e9746",
+        "rev": "be6591698c67a86a69c81fef72167e38d038a9fc",
         "type": "github"
       },
       "original": {
@@ -74,7 +72,6 @@
     },
     "root": {
       "inputs": {
-        "flake-utils": "flake-utils",
         "mach-nix": "mach-nix",
         "nixpkgs": "nixpkgs"
       }
