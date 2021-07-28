@@ -9,18 +9,14 @@
         flake-utils.follows = "flake-utils";
       };
     };
-    tinybeachthor = {
-      url = github:tinybeachthor/nur-packages/master;
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, flake-utils, nixpkgs, mach-nix, tinybeachthor }:
+  outputs = { self, flake-utils, nixpkgs, mach-nix }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = (import nixpkgs {
           inherit system;
-          overlays = [ tinybeachthor.overlay ];
+          overlays = [ ];
         });
       in rec {
         devShell = import ./shell.nix { inherit pkgs; };

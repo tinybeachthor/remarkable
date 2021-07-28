@@ -76,29 +76,7 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "mach-nix": "mach-nix",
-        "nixpkgs": "nixpkgs",
-        "tinybeachthor": "tinybeachthor"
-      }
-    },
-    "tinybeachthor": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1618229792,
-        "narHash": "sha256-SD5Ni8gY0wXTNYK2EvnoRGrffz9GmVaao3u8G3M4+ow=",
-        "owner": "tinybeachthor",
-        "repo": "nur-packages",
-        "rev": "63cc6cefe64a4e73ee7d89e0cfcd72f144852a36",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tinybeachthor",
-        "ref": "master",
-        "repo": "nur-packages",
-        "type": "github"
+        "nixpkgs": "nixpkgs"
       }
     }
   },
